@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>春招报名页</title>
+	<link rel="stylesheet" type="text/css" href="../static/css/enroll.css">
+	<script type="text/javascript">
+	function formSubmit()
+  	{
+  	document.getElementById("form").submit();
+  	}
+	</script>
+</head>
+<body>
+	<div id="mainPage">
+		<header>
+			<img id="logo" src="../static/img/logo.png">
+			<div id="slogan">
+				<p>华中科技大学学生社团联合会
+				</p><br>
+				<p>春季招新线上报名系统</p>
+			</div>
+			<div onclick="window.location.href='{{ url_for('introduce') }}'">
+				<a id="moreInfor" href="{{ url_for('introduce') }}">部门介绍</a>
+				<img id="introImg" src="../static/img/部门介绍图标.png">
+			</div>
+		</header>
+		<form id="form" action="{{ url_for('enroll') }}" method="post">
+			<ul>
+				<li>
+					姓名
+					<input type="text" name="name">
+					性别
+  					<label><input type="radio" name="sex" id="male" value="male"/>男</label>
+  					<label><input type="radio" name="sex" id="female" value="male"/>女</label>
+				</li>
+				<li>院系专业<input type="text" name="major"></li>
+				<li>联系方式<input type="text" name="contact"></li>
+				<li>第一志愿部门&nbsp&nbsp&nbsp&nbsp&nbsp<select name="firstWill">
+					<!--选项 -->
+					<option value="秘书部">秘书部</option>
+					<option value="财务部">财务部</option>
+					<option value="人力资源部">人力资源部</option>
+					<option value="行政监察部">行政监察部</option>
+					<option value="社团部">社团部</option>
+					<option value="公共关系部">公共关系部</option>
+					<option value="外联部">外联部</option>
+					<option value="媒体部">媒体部</option>
+					<option value="宣传部">宣传部</option>
+					<option value="思存工作室">思存工作室</option>
+					<option value="新媒体工作室">新媒体工作室</option>
+					<option value="文艺拓展部">文艺拓展部</option>
+					<option value="社团外联企划部">社团外联企划部</option>
+				</select></li>
+				<li>第二志愿部门&nbsp&nbsp&nbsp&nbsp&nbsp<select name="secondWill">
+					<option value="秘书部">秘书部</option>
+					<option value="财务部">财务部</option>
+					<option value="人力资源部">人力资源部</option>
+					<option value="行政监察部">行政监察部</option>
+					<option value="社团部">社团部</option>
+					<option value="公共关系部">公共关系部</option>
+					<option value="外联部">外联部</option>
+					<option value="媒体部">媒体部</option>
+					<option value="宣传部">宣传部</option>
+					<option value="思存工作室">思存工作室</option>
+					<option value="新媒体工作室">新媒体工作室</option>
+					<option value="文艺拓展部">文艺拓展部</option>
+					<option value="社团外联企划部">社团外联企划部</option>
+				</select></li>
+
+				<li>
+					是否接受调剂
+					<label><input type="radio" name="adjustable" value="yes">是</label>
+					<label><input type="radio" name="adjustable" value="no">否</label>
+				</li>
+				<li>
+					自我介绍
+					<br>
+					<textarea name="selfintroduce" required="required" form="form"></textarea>
+				</li>
+				<input type="submit" value="提交">
+			</ul>
+		</form>
+	</div>
+</body>
+</html>

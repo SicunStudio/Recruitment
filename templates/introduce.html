@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>部门介绍</title>
+	<link rel="stylesheet" type="text/css" href="../static/css/introduce.css">
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js">
+	</script>
+	<script type="text/javascript" src="../static/js/slider.js"></script>
+
+</head>
+<body>
+	<div id="mainPage">
+		<header>
+			<img id="logo" src="../static/img/logo.png">
+			<div id="slogan">
+				<p>华中科技大学学生社团联合会
+				</p><br>
+				<p>春季招新线上报名系统</p>
+			</div>
+			 <!--本来只有文字加了超链接，懒虫lvlv懒得改css了就直接给一个div超链接给一起包了--> 
+			<div onclick="window.location.href='{{  url_for('enroll')  }}'" id="link">
+				<a id="wantToApply" href="{{  url_for('enroll')  }}">我要报名</a>
+				<img id="applyImg" src="../static/img/applyImg.png">
+			</div>
+		</header>
+
+		<div id="words">
+
+			<div id="1">
+
+				<p  class="title">秘书部</p>
+				<p  class="content">
+				1.负责主席团和各部门之间的交流，协调各部门工作及日常事务的处理	<br>
+				2.负责社联章程及制度的起草，监督其实施<br>
+				3.内部物品管理，档案管理，会议组织及值班安排
+
+				</p>
+			</div>
+			<div id="2">
+				<p  class="title">财务部</p>
+				<p  class="content">
+				1.统一执行社联的财务审核、分配、监督和管理工作	<br>
+				2.负责由校团委拨款举办的社团专项活动的财务工作
+
+				</p>
+			</div>
+			<div id="4">
+
+				<p  class="title">人力资源部</p>
+				<p  class="content">
+					1.社联干部招聘、调整，社联干部工作绩效考核评优 <br>
+					2.对社联和社团干部进行培训；引导协会会长做好社团工作 <br>
+					3.管理组织内部人事信息，建设传承社联组织文化
+
+				</p>
+			</div>
+			<div id="5">
+
+				<p  class="title">行政监察部</p>
+				<p  class="content">
+					1.承担社联主要的社团监管的各项工作，全面负责面向社团的各项行政和监察工作<br>
+					2.行政组：负责校内所有申请成立的社团的审批和注册，对问题社团进行整顿和取缔<br>
+					3.评分组：对所有校级社团进行日常考核，包括内建考核，活动考核等<br>
+					4.常务组：负责部门对内事务和部门文化建设，负责开展社团会员维权工作
+
+				</p>
+			</div>
+			<div id="6">
+
+				<p  class="title">社团部</p>
+				<p  class="content">
+					1.负责社联与社团的沟通交流，为社团的发展出谋划策 <br>
+					2.负责部分社联主办活动的组织和策划，为社团搭建活动平台 <br>
+					3.负责社团资料整理及优秀社团精品活动的跟进工作
+
+				</p>
+			</div>
+			<div id="7">
+
+				<p  class="title">公共关系部</p>
+				<p  class="content">
+					1.建立并维持社联与武汉各大高校、社会团体之间的关系<br>
+					2.联络校内各类组织，及时了解校园动态<br>
+					3.为社联社团相关项目进行调研策划<br>
+					4.负责日常管理并培训华中大社联礼仪队
+
+				</p>
+			</div>
+			<div id="8">
+
+				<p  class="title">外联部</p>
+				<p  class="content">
+					1.沟通社联与校外企业，为社联活动提供赞助<br>
+					2.与企业沟通并建立长期合作关系，引导社团社联走出校园
+					3.商业品牌的校园宣传与推广，协助举办大型活动<br>
+
+				</p>
+			</div>
+			<div id="9">
+
+				<p  class="title">媒体部</p>
+				<p  class="content">
+					1.逆光摄影工作室：摄影、摄像工作和创作<br>
+					2.文编组：社联社团活动的文字报道和文学创作<br>
+					3.网络组：更新人人网、微博网络平台的运营、社团网的网络宣传<br>
+					4.主持人队：为社联社团活动、电视节目提供及培训主持人
+
+				</p>
+			</div>
+			<div id="10">
+
+				<p  class="title">宣传部</p>
+				<p  class="content">
+					1.活动宣传策划：在实际宣传中运用创意，制定并落实最优传播策略 <br>
+					2.艺术设计：设计海报、传单、杂志、社联文化产品等<br>
+					3.人才培养：平面设计、摄影后期、宣传创意、文案策划等实践及各类设计软件培训
+
+				</p>
+			</div>
+			<div id="11">
+
+				<p  class="title">思存工作室</p>
+				<p  class="content">
+					1.为社联内部网站以及社团网提供网站制作和服务器维护的技术支持<br>
+					2.为社联和社团的各项活动提供硬件和软件方面的技术支持
+					3.社联内部的技术交流和前沿IT技术沟通培训平台<br>
+					4.为社联开发互联网产品，进行互联网产品的设计<br>
+
+				</p>
+			</div>
+			<div id="12">
+
+				<p  class="title">新媒体工作室</p>
+				<p  class="content">
+					1．微信公众平台等社联自有媒体的日常维护，线上会员维权及意见的反馈<br>
+					2．各社团微信公众平台的搭建
+					3．新媒体推广活动的策划及开展<br>
+					4．微信公众平台二次开发及新媒体宣传模式的尝试和优化
+
+				</p>
+			</div>
+
+			<div id="13">
+
+				<p  class="title">文艺拓展部</p>
+				<p  class="content">
+					1.经理人组：统筹管理表演队，负责表演队日常排练及演出事务<br>
+					2.常务组：部门常务资料整理和更新，表演队评分，相关演出和部门活动的策划<br>
+					3.拓展组：拓展推广表演队，收集整合校内演艺资源，与社联演艺活动有关的对外交流
+
+
+				</p>
+			</div>
+
+			<div id="14">
+
+				<p  class="title">社团外联企划部</p>
+				<p  class="content">
+					1.为社团寻求或提供包括师资、活动赞助、长期商业合作在内的各种资源，包括学校社团外联活动的协助与监管。<br>
+					2.加强社联与社团之间的联系，利用社联的资源帮助社团发展<br>
+					3.通过社团骨干培训体系，提升部员的整体素质，为社团培养管理型精英人才。
+
+
+
+				</p>
+			</div>
+
+		</div>
+
+		<div id="slider">
+			<img class="arrow" id="up" src="../static/img/arrowUp.png">
+			<img class="arrow" id="down" src="../static/img/arrowDown.png">
+		</div>
+
+	</div>
+</body>
+
+
+</script>
+
+</html>

@@ -1,0 +1,98 @@
+/*整体预设*/
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 30px;
+	color: white;
+	text-decoration: none;
+	list-style: none;
+}
+body{
+	background-color: #111;
+}
+#mainPage{
+	background-image: url(../img/introduce-back.png);
+	margin: 0 auto;
+	background-color: #bfbfbf;
+	width: 1080px;
+	height: 1920px;
+	position: relative;
+}
+
+
+/*头部*/
+header{
+	position: relative;
+}
+header img,header p{
+	display: inline-block;
+}
+
+#logo{
+	position: absolute;
+	left: 60px;
+	top:100px;
+}
+#slogan{
+	position: absolute;
+	left: 230px;
+	top:130px;
+
+}
+#slogan p {
+
+	font-size: 20px;
+}
+#applyImg{
+	position: absolute;
+	top: 105px;
+	right: 130px;
+}
+#wantToApply {
+	position: absolute;
+	right: 300px;
+	top: 100px;
+	width: 1em;
+}
+#wantToApply a{
+	display: inline;
+}
+
+/*内容部分*/
+
+#words div{
+	opacity: 0;
+}
+.title{
+	position: absolute;
+	top: 30%;
+	left: 15%;
+	font-size: 100px;
+}
+.content{
+	font-size: 50px;
+	display: block;
+	width: 70%;
+	position: absolute;
+	top: 40%;
+	left: 15%;
+	word-wrap:break-word;
+	word-break:normal;
+}
+
+/*箭头*/
+#slider{
+	position: absolute;
+	left: 50%;
+}	/*wrapper用来使两箭头居中*/
+.arrow{
+	display: block;
+	margin-left: -50%;
+	opacity: 0;
+}
+#up{
+	margin-top: 350px;
+}
+#down{
+	margin-top: 1000px;
+}
